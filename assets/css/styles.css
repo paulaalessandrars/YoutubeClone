@@ -1,0 +1,243 @@
+/* Reset */
+/* Remove a margem e o preenchimento padrão de todos os elementos e define box-sizing para incluir padding e border no tamanho total do elemento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+/* Define a fonte principal da página e a cor de fundo */
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+/* Estiliza o cabeçalho como um container flexível, com itens espaçados uniformemente e alinhados ao centro */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 24px 0px 24px;
+    background-color: white;
+    color: black;
+}
+
+/* Estiliza a logo do menu no cabeçalho */
+header .menu-logo button {
+    width: 24px;
+    height: 24px;
+    top: 16px;
+    left: 24px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Estiliza a logo yotube no cabeçalho */
+header .logo img {
+    width: 90px;
+    height: 20px;
+    top: 18px;
+    left: 80px;
+    margin-left: -170px; /* Alinha a logo de acordo com o layout */
+    cursor: pointer;
+}
+
+/* Estiliza a barra de pesquisa no cabeçalho */
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 40px;
+    border: 1px solid #CCCCCC;
+    border-radius: 40px;
+    margin-right: 250px;
+}
+
+/* Estiliza o campo de entrada na barra de pesquisa */
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 40px 0 0 40px;
+    background-color: #FFFFFF;
+}
+
+/* Estiliza o botão da barra de pesquisa */
+.search-bar button {
+    display: flex; /* Utiliza flexbox para o alinhamento */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px;
+    width: 57px;
+    height: 40px;
+    border: none;
+    background-color: #F8F8F8;
+    cursor: pointer;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 0px 40px 40px 0px;
+}
+
+
+/* Estiliza os ícones de usuário no cabeçalho */
+.user-icons button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Container */
+/* Define o container principal da página como um layout flexível */
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+/* Video Player Area */
+/* Define a área do player de vídeo com flexibilidade e margem à direita */
+.video-player {
+    flex: 1;
+    margin-right: 10px;
+}
+
+/* Estiliza a imagem que serve como placeholder para o vídeo */
+.video-placeholder img {
+    width: 850px;
+    height: 507px;
+    border-radius: 10px;
+    margin: 0 20px 0 100px;  
+}
+
+/* Estiliza os detalhes do vídeo */
+.video-details {
+    padding-top: 15px;
+    margin-left: 100px;
+    width: 850px;
+    justify-content: space-between; /* Espaça os elementos de forma igual */
+}
+
+/* Estiliza o título do vídeo */
+.video-details h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* Estiliza parágrafos dentro dos detalhes do vídeo */
+.video-details p {
+    padding-top: 10px;
+}
+
+
+/* Estiliza a seção de informações do vídeo */
+.video-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Estiliza as informações do canal */
+.channel-info {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+/* Estiliza a imagem do canal com bordas arredondadas */
+.channel-info img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.video-details-text{
+    width: 600px;
+    color: #606060; 
+    margin-top: 10px;
+}
+
+/* Estiliza o botão de inscrever-se */
+.subscribe-button {
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 45px;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-left: 10px; /* Ajusta a distância do botão em relação ao logo */
+}
+
+/* Estiliza os botões de ação do vídeo */
+.video-actions button {
+    margin-right: 10px;
+    background: none;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    margin-left: 9px; /* Ajusta a distância dos botões entre si */
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Sidebar */
+/* Define a barra lateral com flexibilidade e margem à direita */
+.sidebar {
+    flex: 1;
+    margin-right: 100px;
+}
+
+/* Estiliza cada recomendação de vídeo na barra lateral */
+.video-recommendation {
+    display: flex;
+    align-items: flex-start; /* Alinha a imagem e o texto ao topo */
+    margin-bottom: 10px;
+}
+
+/* Estiliza a imagem de recomendação de vídeo */
+.video-recommendation img {
+    margin-right: 10px;
+    max-width: 200px;
+    max-height: 100px;
+}
+
+/* Estiliza o container de texto das recomendações de vídeo */
+.video-recommendation .text-container {
+    display: flex;
+    flex-direction: column; /* Coloca o texto em coluna, um abaixo do outro */
+}
+
+/* Estiliza o título do vídeo */
+.video-recommendation h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.1; /* Ajusta a altura da linha para aproximar as linhas de texto */
+}
+
+/* Estiliza a descrição do canal */
+.video-recommendation .channel-name {
+    font-size: 0.9rem;
+    color: #606060; /* Cor cinza para o nome do canal */
+    margin: 4px 0;
+}
+
+/* Estiliza a quantidade de visualizações e tempo */
+.video-recommendation .views-time {
+    font-size: 0.8rem;
+    color: #606060; /* Cor cinza para as visualizações e tempo */
+    line-height: 1.2; /* Ajusta a altura da linha para aproximar as linhas de texto */
+}
+
+
